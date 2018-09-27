@@ -1,0 +1,460 @@
+body{
+  overflow:hidden;
+}
+  * {box-sizing: border-box;}
+/*
+  #reviewPage{
+    height:99vh;
+    width:99vw;
+    //border: 1px solid black;
+  }
+  #innerReview{
+    //border: 1px solid black;
+    width: 100%;
+    height: 95vh;
+    margin: auto;
+    margin-top:0;
+    margin-left:0;
+    overflow-y:scroll;
+  }
+
+ */
+  
+
+    /*Side menu that slides out and you pick General topics*/
+  #sidePart{
+    top:0;
+    left:0;
+    //float: left;
+    height: 100vh;
+    width: 1px;
+    border: solid black 1px;
+    position: fixed;
+    background-color: white;
+    transition: width 0.5s;
+    z-index:100;
+  }
+  #sidePart:hover {
+    width: 34vw;
+  }
+  #setContainer{
+    border: solid white 1px;
+    width: 90%;
+    height: 90%;
+    margin: auto;
+    margin-top: 10%;
+    opacity:0;
+    visibility:hidden;
+  }
+  #setTitle{
+    text-align:center;
+    margin:auto;
+    margin-bottom:5%;
+    width:80%;
+    height:8%;
+    border-bottom:1px solid black;
+  }
+  #sidePart:hover #setContainer {
+  visibility:visible;
+  opacity: 1;
+  transition: opacity 1s;
+  transition-delay: 0.5s;
+  }
+  .setClass {
+    border: solid black 1px;
+    width: 35%;
+    height: 15%;
+    margin: auto;
+    margin-top: 10%;
+  }
+  .setClass p {
+    text-align: center;
+    font-size: 2.4vh;
+    top:30%;;
+    position: relative;
+    transform:  translateY(-50%);
+  }
+
+
+
+        /*main part where you select properties and object sets*/
+
+  #main {
+    //border: solid black 1px;
+    width: 99vw;
+    height: 90vh;
+    margin: 0vh 0 0vh 0;
+    float: left;
+  }
+  #propertyCheck{
+    //border: 1px solid black;
+  border-right: solid black 1px;
+    width: 33vw;
+    height: 90%;
+    margin: 5% 0 5% 0;
+    float:left;
+  }
+  #topProp{
+    height: 10%;
+    text-align: center;
+    font-size: 3vh;
+    //border: solid black 1px;
+  }
+          /*Property Container*/
+  #bottomProp{
+    border-top: 1px solid black;
+    width: 70%;
+    margin:auto;
+    padding-top: 5vh;
+    height: 81%;
+    text-align: center;
+    font-size: 2vw;
+    overflow-y:auto;
+  }
+            /*styles all Property divs to be added*/
+  .propStyleX{
+    border: solid black 1px;
+    margin: 0 1vw 15% 1vw;
+    border-radius: 6px;
+  }
+  
+    /*encompasses entire right section*/
+   #drugClassCheck{
+    //border: solid black 2px;
+    width: 65%;
+    height: 90%;
+    margin: 5% 0 5% 0;
+    float: left;
+    text-align: center;
+  }
+    /*title for Object Set section*/
+/*    #classProp{
+      border: solid black 2px;
+
+  }*/
+  #objectSet{
+    height: 10%;
+    width:50%;
+    margin-left:25%;
+    font-size: 3vh;
+  }
+          /*Object Set Container*/
+  #section1 {
+    border-top: 1px solid black;
+    height: 50%;
+    width: 70%;
+    margin:auto;
+    font-size: 2vw;
+    overflow-y:auto;
+    text-align: center;
+    padding-top: 5vh;
+  }
+            /*styles all Object Set divs to be added*/
+    .propStyle {
+      float: left;
+      margin: 0 1vw 2vh 1vw;
+      border: solid black 1px;
+      width: 45%;
+      border-radius: 6px;
+    }
+
+  #submitButton{
+    position: relative;
+    float: left;
+    border: 1px solid black;
+    margin: 5% 30% 0 30%;
+    width: 40%;
+    height: 5vh;
+    box-shadow: 2px 5px 20px;
+    transition: box-shadow 0.25s;
+    top: 0;
+    transition: top 0.25s;
+  }
+  #submitButton h4 {
+    text-align: center;
+    font-size:2vh;
+    position: relative;
+    transform:  translateY(-50%);
+  }
+   
+                                  //styles from Questions Page
+  
+  * {box-sizing: border-box;}
+  
+  #outside {
+    width: 99vw;
+    height:99vh;
+    
+    display: none;
+    opacity: 0;
+    transition: opacity 3s;
+    position: absolute;
+    //top: 100vh;
+  }
+  #inside{
+    //border: 5px solid black;
+    //margin: 2vh 10vw 2vh 20vw;
+    margin: auto;
+    width: 60vw;
+    margin-top:3vh;
+    height: 80vh;
+    padding: 5vh 5vw 5vw 5vh;
+  }
+  
+  #top {
+    //border: 1px solid black;
+    height: 33%;
+    text-align: center;
+    font-family: garamond;
+  }
+/* on left side of top*/
+/*  #chemStructure {
+    //border: 1px solid black;
+    height: 90%;
+    width: 19%;
+    float:left;
+  }*/
+/*  #questionContainer{
+    border: 1px solid black;
+    float: left;
+    width: 99%;
+  }*/
+  #des{
+    margin-top: 0px;
+    //border: 1px solid blue;
+    height: 70%;
+  }
+  #description{
+    //border: 1px solid green;
+    height:20%;
+    font-size: 3vh;
+  }
+/*on right side of top*/
+  #spaceToCenter{
+    display:none;
+  }
+  
+  
+  #questions {
+    border-top: 1px solid black;
+    font-size: 3vh;
+    margin-top: 5%;
+    height: 66%;
+    text-align: center;
+    //box-shadow:2px 2px 5px black;
+    padding: 0vh 5vw 0vh 5vw;
+  }
+  #optionsHolder {
+    font-size: 2.2vh;
+    margin-top: 10%;
+  }
+
+  #OutDrug2{
+    //border: 1px solid black;
+    width: 100%;
+    margin-bottom: 5%;
+  }
+  #drug222 {
+    border: 1px solid black;
+    width: 29%;
+    border-radius:6px;
+    margin-left: 36%;
+    margin-right: 34.5%;
+    float: right;
+    margin-bottom: 2%;
+  }
+  #drug444{
+    border: 1px solid black;
+    width: 29%;
+    border-radius:6px;
+    float: right;
+    margin-left: 5%;
+  }
+  #drug333{
+    border: 1px solid black;
+    width: 29%;
+    border-radius:6px;
+    float: right;
+    margin-left: 5%;
+    margin-right: 0.5%;
+  }
+  #drug111 {
+    border: 1px solid black;
+    width: 29%;
+    border-radius:6px;
+    float: right;
+  }
+
+  .ifWrong{
+    animation: wrongAnswer 1s ease-in;
+  }
+@keyframes wrongAnswer {
+  0% {background-color: #FF3936;}
+  100% {background-color: white;}
+}
+
+  #outerBar{
+    height: 5vh;
+    width: 40vw;
+    float: left;
+    //margin-left: 40vw;
+    border: 3px solid black;
+    padding: 0.1vh;
+    margin-top: 20%;
+  }
+   #greenBar {
+    height: 100%;
+    width: 0%;
+    max-width: 100%;
+    background-color: #99FFBE;
+    transition: width 0.5s;
+  }
+  
+  
+  
+  /* The Modal (background) */
+.modal {
+    //display: none; /* Hidden by default */
+    position: fixed; /* Stay in place */
+    z-index: 1; /* Sit on top */
+    left: 0;
+    top: 0;
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    overflow: hidden; /* Enable scroll if needed */
+    background-color: rgb(0,0,0); /* Fallback color */
+    background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+}
+
+/* Modal Content/Box */
+#modal-content {
+    background-color: #fefefe;
+    margin: 10% auto; /* 15% from the top and centered */
+    position: relative;
+    padding: 20px;
+    border: 1px solid #888;
+    width: 70%; /* Could be more or less, depending on screen size */
+    height: 60%;
+    animation-name: animFromTop;
+    animation-duration: 0.5s;
+    overflow-y: auto;
+    opacity: 0;
+}
+
+#myModal{
+  display: none;
+}
+
+/* The Close Button */
+.close {
+    color: #aaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+    color: black;
+    text-decoration: none;
+    cursor: pointer;
+}
+  
+#cheatsheetTable, td {
+  border: 1px solid black;
+  padding-left: 5px;
+  padding-right: 5px;
+  font-size: 2vw;
+}
+
+#myBtn {
+  height: 5vh;
+  width: 5vh;
+  border: 3px solid black;
+  padding: 0.1vh;
+  float: right;
+  background-color:#EFBFFF;  /*purply-pink*/
+  border-radius: 4px;
+  margin-top: 20%;
+}
+#cheatText {
+  //border: 1px solid black;
+  padding-top:5.5vh;
+  margin-left: -70%;
+  font-size: 0.9em;
+}
+
+#beatGame {
+    background-color: #fefefe;
+    margin: 10% auto; /* 15% from the top and centered */
+    position: relative;
+    padding: 20px;
+    border: 1px solid #888;
+    width: 70%; /* Could be more or less, depending on screen size */
+    height: 60%;
+    opacity: 0;
+}
+#congrats {
+  margin-top:10vh;
+  width: 100%;
+  text-align: center;
+}
+
+#beatGameContainer {
+  margin: 20vh 5vw 0 5vw;
+}
+
+#closeBeatGame {
+  border: 1px solid black;
+  width: 40%;
+  height: 7vh;
+  padding: 9px;
+  float: left;
+  border-radius: 5px;
+}
+#otherOption {
+  border: 1px solid black;
+  width: 40%;
+  height: 7vh;
+  padding: 9px;
+  float: right;
+  border-radius: 5px;
+}
+
+#pathwayMap {
+    background-color: #fefefe;
+    margin: 10% auto; /* 15% from the top and centered */
+    position: relative;
+    padding: 20px;
+    border: 1px solid #888;
+    width: 70%; /* Could be more or less, depending on screen size */
+    height: 60%;
+    opacity: 0;
+}
+  #questionStyle{
+    width:20%;                                          /*here*/
+    height:100%;
+    position: relative;
+    float:left;
+    display:inline-block;
+    //border:1px solid blue;
+    font-size:2vw;
+    text-align:center;
+  }
+#askPdiv{
+  border:1px solid black;
+  border-bottom:1px solid white;
+  //border-radius: 5px;
+}
+#askOdiv{
+  border:1px solid black;
+  border-top:1px solid white;
+  //border-radius: 5px;
+}
+#settings{
+  border-top:1px solid black;
+  height:10vh;
+  float:left;
+  width:99vw;
+  padding-top:1vh;
+}
