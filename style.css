@@ -184,10 +184,6 @@ body{
   #outside {
     width: 99vw;
     height:99vh;
-    
-    display: none;
-    opacity: 0;
-    transition: opacity 3s;
     position: absolute;
     //top: 100vh;
   }
