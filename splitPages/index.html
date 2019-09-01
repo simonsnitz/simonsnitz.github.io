@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+
+<html>
+<head>
+<script src="script.js"></script>
+<link rel="stylesheet" href="style.css">
+</head>
+<!--May want to use semantic elements (<header><nav><section><article><footer>) instead of <div> elements with #id-s for easier access/organization -->
+<body>
+<!--
+  <div id='reviewPage'>
+
+      
+      <iframe width='100%' height='100%' frameborder='0' src='StudyGuideTest4Combo.html' allowfullscreen></iframe>
+      
+
+  </div>
+  -->
+  
+  
+
+  <div id='sidePart'>
+    <div id='setContainer'>
+      <div id='setTitle'><h2>Metabolism</h2></div>
+      <div class='setClass' id='firstSet'><p>Carbohydrate Metabolism</p></div>
+      <div class='setClass' id='secondSet'><p>Lipid Metabolism</p></div>
+      <div class='setClass' id='thirdSet'><p>Amino Acid Metabolism</p></div>
+      <div class='setClass' id='fourthSet'><p>Nucleic Acid Metabolism</p></div>
+    </div>
+  </div>
+  
+<div id='firstPage'>
+  
+  
+  <div id='main'>
+    
+    <div id='propertyCheck'>
+      <div id='topProp'>
+        <p>Properties</p>
+      </div>
+      <div id='bottomProp'>
+              <!-- properties show up here from ajax request-->
+      </div>
+    </div>
+    
+    <div id='drugClassCheck'>
+
+        <div id='objectSet'>
+          <p>Object Sets</p>
+        </div>
+                                    <!--here-->
+
+      <div id='section1'>
+            <!-- properties show up here from ajax request-->
+      </div>
+         
+      <div id='submitButton' onClick= onceClicked()>
+        <h4>Submit</h4>
+      </div>
+    </div>
+  </div>
+  <div id='settings'>
+        <div id='questionStyle'>
+          <div id='askPdiv' style='background-color:#E5BDFC'><input type='checkbox' id='askP' checked><label>Property</label></div>
+         <div id='askOdiv'><input type='checkbox' id='askO'><label>Object</label></div>
+        </div>
+  </div>
+</div>
+  
+  
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+<!--
+To Do:
+- Use Cookies(?) to save levels/amount practiced.
+- New option for # of properties tested in 1 question.
+- Create sentence questions from concatenating multiple small phrases.
+- Construct drug libraries (and later for proteins?).
+
+
+Prettify pages:  (always)
+- make optional object checkboxes into divs(when clicked: transition[shadow -> noShadow, white -> light green] hover[shows list of metabolites]
+- make object choice buttons reactive and pretty
+
+Specific Application:
+  Metabolic Pathways
+   -incorporate pathway map into cheatsheet
+   -new group of objects (Enzyme)
+   -draw/use images of metabolite structures
+   -new types of questions:
+     -missing metabolite in pathway
+     -identify enzyme that converts A -> B
+   
+-->
